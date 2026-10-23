@@ -1,0 +1,8 @@
+# Dados pessoais do usuário (estoque e planos): arquivo do servidor local, do botão "Salvar em arquivo" e backups exportados
+estoque.json
+pw-crafting-estoque*.json
+estoque.json.bak
+estoque.json.tmp
+
+# Arquivo único gerado por tools/gerar-arquivo-unico.js
+dist/
