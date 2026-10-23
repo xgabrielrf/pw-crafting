@@ -38,6 +38,13 @@ IDS = {  # (nome, nivel) -> id no pwdatabase
     ("Coração de Fogo do Fantasma", 99): 15284, ("Coração da Sagrada Mãe", 99): 15288,
     ("Seda Dourada do Rei Fantasma", 99): 15290, ("Jóia Verdejante", 99): 15292, ("Lâmina Verdejante", 99): 15293,
     ("Máscara Dourada", 100): 15309, ("Cetro do Poder do Crepúsculo", 100): 15310,
+    # itens que só aparecem na página de drops (não entram em receitas)
+    ("Porta Tambor", 70): 15231, ("Jóia Negra do Tenente Primordial", 70): 15237, ("Alma da Serpente Ancestral", 80): 15252,
+    ("Luvas de Feng Wuhen", 80): 15254, ("Carapaça do Escravo Fantasma", 90): 15273, ("Presa Prismática", 90): 15275,
+    ("Casco da Grande Besta", 90): 15276, ("Poder do Espírito de Cristal", 90): 15277, ("Armadura da Escuridão", 99): 15280,
+    ("Alma da Mulher Demônio", 99): 15299, ("Bainha do Rei Fantasma", 99): 15300, ("Alma da Grande Besta", 99): 15301,
+    ("Destino do Crepúsculo", 99): 15302, ("Alma Pura da Escuridão", 99): 15303,
+    ("Pedra dos Sonhos", 99): 15307,  # no pwdatabase: "Pedra da Ilusão" (cai do Senhor das Ilusões)
     ("Casco da Grande Besta", 99): 15294,  # no jogo/db aparece como "Máscara Fantasma" (15294)
 }
 # (cap, boss, qtdeBoss, {dificuldade: [(item, nivel), ...]})
@@ -67,10 +74,10 @@ B = [
  (3, "Ministro Zi Cun", A, {1: [], 2: [("Casco da Grande Besta", 99), ("Selo do Ministro", 99), ("Alma Pura da Escuridão", 99)], 3: [("Chicote de Seda Pura", 99), ("Asas Puras Brilhantes", 99), ("Cetro do Poder do Crepúsculo", 100)]}),
  (3, "Rei Cang Li (Imperador do Crepúsculo)", A, {1: [], 2: [("Lâmina Verdejante", 99), ("Jóia Verdejante", 99), ("Destino do Crepúsculo", 99)], 3: [("Espírito Guerreiro do Rei", 99), ("Remorso do Crepúsculo", 99), ("Máscara Dourada", 100)]}),
  (3, "Senhor das Ilusões", A, {1: [], 2: [], 3: [("Fonte Espelhada Ilusória", 99), ("Marca do Senhor das Ilusões", 99), ("Pedra dos Sonhos", 99), ("Espírito do Céu e da Terra", 100)]}),
- (3, "Boss, Mobs, Baú", MA, {1: [("Antiga Espada Ornamental", 80), ("Pedra do Lar", 90)], 2: [("Pedra do Lar", 80), ("Símbolo do Crepúsculo", 99)], 3: [("Símbolo do Crepúsculo", 99)]}),
+ (3, "Boss, Mobs, Baú", MA, {1: [("Antiga Espada Ornamental", 80), ("Pedra do Lar", 90)], 2: [("Pedra do Lar", 90), ("Símbolo do Crepúsculo", 99)], 3: [("Símbolo do Crepúsculo", 99)]}),
 ]
 
-# Raridade pela cor do nome nas imagens do guia: amarelo = gold, vermelho = Red Dusk, resto = normal.
+# Raridade pela cor do nome nas tabelas da Wiki PW (por IronfreaK; as mesmas imagens do guia): amarelo = gold, vermelho = Red Dusk, resto = normal.
 GOLD = {
     ("Espírito da Armadura Dourada", 80), ("Alma da Serpente Ancestral", 80),
     ("Jóia Negra do Tenente Primordial", 70), ("Luvas de Feng Wuhen", 80), ("Mão do Grande Símeo", 80),
@@ -79,7 +86,7 @@ GOLD = {
     ("Casco da Grande Besta", 90), ("Alma da Grande Besta", 99), ("Bainha do Rei Fantasma", 99),
     ("Alma Pura da Escuridão", 99), ("Destino do Crepúsculo", 99), ("Remorso do Crepúsculo", 99),
     ("Marca do Senhor das Ilusões", 99), ("Pedra dos Sonhos", 99),
-    ("Asas Puras Brilhantes", 99),  # verde na imagem, mas o usuário a definiu como gold
+    ("Asas Puras Brilhantes", 99),
 }
 RED = {("Cetro do Poder do Crepúsculo", 100), ("Máscara Dourada", 100), ("Espírito do Céu e da Terra", 100)}
 def raridade(n, v):
@@ -95,15 +102,23 @@ for cap, boss, q, difs in B:
                 "item": nome, "nivelItem": nivel, "itemId": IDS.get((nome, nivel)), "raridade": raridade(nome, nivel),
             })
 
+# Visão por boss (para a página "Drops"): inclui "Nada" (lista vazia) e o modo, como nas tabelas da wiki.
+bosses = [{
+    "capitulo": cap, "boss": boss, "modo": "Grupo" if q == A else "Solo / Grupo", "qtdeBoss": q,
+    "dusks": {str(d): [{"item": n, "nivelItem": v, "itemId": IDS.get((n, v)), "raridade": raridade(n, v)} for n, v in itens]
+              for d, itens in difs.items()},
+} for cap, boss, q, difs in B]
+
 out = {
     "capitulos": {str(c): {"nome": n, "essenciaPorBossAlta": e, "dificuldades": d} for c, (n, e, d) in CAP.items()},
     "semDrop": {"15461": "Gasto de entrada em bosses Alta (Cap.1: 1, Cap.2: 2, Cap.3: 3)"},
     "drops": drops,
+    "bosses": bosses,
 }
 path = sys.argv[1]
 body = json.dumps(out, ensure_ascii=False, indent=1)
 open(path, "w", encoding="utf-8").write(
-    "// Drops do Crepúsculo (fonte: guia do usuário). 'dusk' = capítulo-dificuldade (ex.: 2-1).\n"
+    "// Drops do Crepúsculo (fonte: Tabelas do Palácio do Crepúsculo, Wiki PW, por IronfreaK). 'dusk' = capítulo-dificuldade (ex.: 2-1).\n"
     "// Conteúdo é JSON puro; carregado via <script> para funcionar em file://.\n"
     "window.DROPS = " + body + ";\n")
 print(len(drops), "drops;", sum(1 for d in drops if d["itemId"]), "com itemId")
