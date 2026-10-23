@@ -7,28 +7,59 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="layout">
-    <section class="pw-window" aria-label="Janela de crafting">
-      <nav class="tabs" id="tabs"></nav>
-      <div class="grid" id="grid"></div>
-      <div class="detail" id="detail">
-        <p class="hint">Selecione uma arma.</p>
+  <header class="topo">
+    <span class="marca">PW Crafting</span>
+    <nav class="menu" aria-label="Menu principal">
+      <div class="dropdown">
+        <button class="menu-btn" id="btnDusk" aria-haspopup="true" aria-expanded="false" aria-controls="listaDusk">Dusk <span class="seta">▾</span></button>
+        <ul class="menu-lista" id="listaDusk" role="menu" hidden>
+          <li role="none"><button role="menuitem" data-view="arma">Arma</button></li>
+          <li role="none"><button role="menuitem" data-view="drops">Drops</button></li>
+        </ul>
       </div>
+    </nav>
+    <span class="view-atual" id="viewAtual"></span>
+  </header>
+
+  <div id="view-arma">
+    <main class="layout">
+      <div class="col-esq">
+        <section class="pw-window" aria-label="Janela de crafting">
+          <nav class="tabs" id="tabs"></nav>
+          <div class="grid" id="grid"></div>
+          <div class="detail" id="detail">
+            <p class="hint">Selecione uma arma.</p>
+          </div>
+        </section>
+
+        <section class="planos" id="planos" aria-label="Planos e estoque"></section>
+      </div>
+
+      <aside class="chain" id="chain" aria-label="Cadeia de Almas">
+        <h2>Cadeia de Almas</h2>
+        <p class="hint">Selecione uma arma para ver tudo o que precisa construir, do nível 60 até ela.</p>
+      </aside>
+    </main>
+
+    <section class="materiais total" id="materiais" aria-label="Total de materiais">
+      <h2>Total de materiais</h2>
+      <p class="hint">Selecione uma arma para ver os materiais, onde dropam e a dificuldade.</p>
     </section>
+  </div>
 
-    <aside class="chain" id="chain" aria-label="Cadeia de Almas">
-      <h2>Cadeia de Almas</h2>
-      <p class="hint">Selecione uma arma para ver tudo o que precisa construir, do nível 60 até ela.</p>
-    </aside>
-  </main>
+  <div id="view-drops" hidden>
+    <section class="drops-pagina" id="dropsPagina" aria-label="Drops do Palácio do Crepúsculo"></section>
+  </div>
 
-  <section class="materiais total" id="materiais" aria-label="Total de materiais">
-    <h2>Total de materiais</h2>
-    <p class="hint">Selecione uma arma para ver os materiais, onde dropam e a dificuldade.</p>
-  </section>
+  <footer class="creditos">
+    Projeto de fã, sem vínculo com a Perfect World. Receitas, itens e ícones: <a href="https://www.pwdatabase.com/br/npc/15494" target="_blank" rel="noopener">pwdatabase.com</a>.
+    Dusk, boss e dificuldade dos drops: <a href="https://wikipw.com.br/index.php/Tabelas_do_Pal%C3%A1cio_do_Crep%C3%BAsculo" target="_blank" rel="noopener">Tabelas do Palácio do Crepúsculo (Wiki PW)</a>, por IronfreaK.
+  </footer>
 
   <script src="data/data.js"></script>
   <script src="data/drops.js"></script>
+  <script src="calc.js"></script>
+  <script src="pagina-drops.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
