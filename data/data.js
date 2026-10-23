@@ -296,7 +296,23 @@ window.DATA = {
     15405: { nome: "Alma: Esp da Lamentação Malígna", tipo: "alma" },
     15406: { nome: "Alma: Cajado Imóvel", tipo: "alma" },
     15407: { nome: "Alma: Roda das Almas", tipo: "alma" },
-    15408: { nome: "Alma: Roda do Destino", tipo: "alma" }
+    15408: { nome: "Alma: Roda do Destino", tipo: "alma" },
+    // itens que só aparecem na página de drops
+    15231: { nome: "Porta Tambores", tipo: "material" },
+    15237: { nome: "Jóia Negra do Tenente Primordial", tipo: "material" },
+    15252: { nome: "Alma da Serpente Ancestral", tipo: "material" },
+    15254: { nome: "Luvas de Feng Wuhen", tipo: "material" },
+    15273: { nome: "Carapaça do Escravo Fantasma", tipo: "material" },
+    15275: { nome: "Presa Prismática", tipo: "material" },
+    15276: { nome: "Casco da Grande Besta", tipo: "material" },
+    15277: { nome: "Poder do Espírito de Cristal", tipo: "material" },
+    15280: { nome: "Armadura da Escuridão", tipo: "material" },
+    15299: { nome: "Alma da Mulher Demônio", tipo: "material" },
+    15300: { nome: "Bainha do Rei Fantasma", tipo: "material" },
+    15301: { nome: "Alma da Grande Besta", tipo: "material" },
+    15302: { nome: "Destino do Crepúsculo", tipo: "material" },
+    15303: { nome: "Alma Pura da Escuridão", tipo: "material" },
+    15307: { nome: "Pedra da Ilusão", tipo: "material" }
   },
   recipes: [
     // abas I-V (slot = posição 1-32 na grade 8x4 do jogo)

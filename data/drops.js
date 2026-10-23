@@ -1,4 +1,4 @@
-// Drops do Crepúsculo (fonte: guia do usuário). 'dusk' = capítulo-dificuldade (ex.: 2-1).
+// Drops do Crepúsculo (fonte: Tabelas do Palácio do Crepúsculo, Wiki PW, por IronfreaK). 'dusk' = capítulo-dificuldade (ex.: 2-1).
 // Conteúdo é JSON puro; carregado via <script> para funcionar em file://.
 window.DROPS = {
  "capitulos": {
@@ -86,7 +86,7 @@ window.DROPS = {
    "qtdeBoss": "Média/Alta",
    "item": "Porta Tambor",
    "nivelItem": 70,
-   "itemId": null,
+   "itemId": 15231,
    "raridade": "normal"
   },
   {
@@ -185,7 +185,7 @@ window.DROPS = {
    "qtdeBoss": "Alta",
    "item": "Alma da Serpente Ancestral",
    "nivelItem": 80,
-   "itemId": null,
+   "itemId": 15252,
    "raridade": "gold"
   },
   {
@@ -295,7 +295,7 @@ window.DROPS = {
    "qtdeBoss": "Média/Alta",
    "item": "Jóia Negra do Tenente Primordial",
    "nivelItem": 70,
-   "itemId": null,
+   "itemId": 15237,
    "raridade": "gold"
   },
   {
@@ -339,7 +339,7 @@ window.DROPS = {
    "qtdeBoss": "Média/Alta",
    "item": "Luvas de Feng Wuhen",
    "nivelItem": 80,
-   "itemId": null,
+   "itemId": 15254,
    "raridade": "gold"
   },
   {
@@ -361,7 +361,7 @@ window.DROPS = {
    "qtdeBoss": "Média/Alta",
    "item": "Luvas de Feng Wuhen",
    "nivelItem": 80,
-   "itemId": null,
+   "itemId": 15254,
    "raridade": "gold"
   },
   {
@@ -482,7 +482,7 @@ window.DROPS = {
    "qtdeBoss": "Alta",
    "item": "Presa Prismática",
    "nivelItem": 90,
-   "itemId": null,
+   "itemId": 15275,
    "raridade": "gold"
   },
   {
@@ -515,7 +515,7 @@ window.DROPS = {
    "qtdeBoss": "Alta",
    "item": "Poder do Espírito de Cristal",
    "nivelItem": 90,
-   "itemId": null,
+   "itemId": 15277,
    "raridade": "gold"
   },
   {
@@ -625,7 +625,7 @@ window.DROPS = {
    "qtdeBoss": "Média/Alta",
    "item": "Armadura da Escuridão",
    "nivelItem": 99,
-   "itemId": null,
+   "itemId": 15280,
    "raridade": "normal"
   },
   {
@@ -658,7 +658,7 @@ window.DROPS = {
    "qtdeBoss": "Média/Alta",
    "item": "Carapaça do Escravo Fantasma",
    "nivelItem": 90,
-   "itemId": null,
+   "itemId": 15273,
    "raridade": "gold"
   },
   {
@@ -713,7 +713,7 @@ window.DROPS = {
    "qtdeBoss": "Média/Alta",
    "item": "Alma da Mulher Demônio",
    "nivelItem": 99,
-   "itemId": null,
+   "itemId": 15299,
    "raridade": "gold"
   },
   {
@@ -790,7 +790,7 @@ window.DROPS = {
    "qtdeBoss": "Alta",
    "item": "Casco da Grande Besta",
    "nivelItem": 90,
-   "itemId": null,
+   "itemId": 15276,
    "raridade": "gold"
   },
   {
@@ -823,7 +823,7 @@ window.DROPS = {
    "qtdeBoss": "Alta",
    "item": "Alma da Grande Besta",
    "nivelItem": 99,
-   "itemId": null,
+   "itemId": 15301,
    "raridade": "gold"
   },
   {
@@ -867,7 +867,7 @@ window.DROPS = {
    "qtdeBoss": "Alta",
    "item": "Bainha do Rei Fantasma",
    "nivelItem": 99,
-   "itemId": null,
+   "itemId": 15300,
    "raridade": "gold"
   },
   {
@@ -900,7 +900,7 @@ window.DROPS = {
    "qtdeBoss": "Alta",
    "item": "Alma Pura da Escuridão",
    "nivelItem": 99,
-   "itemId": null,
+   "itemId": 15303,
    "raridade": "gold"
   },
   {
@@ -966,7 +966,7 @@ window.DROPS = {
    "qtdeBoss": "Alta",
    "item": "Destino do Crepúsculo",
    "nivelItem": 99,
-   "itemId": null,
+   "itemId": 15302,
    "raridade": "gold"
   },
   {
@@ -1032,7 +1032,7 @@ window.DROPS = {
    "qtdeBoss": "Alta",
    "item": "Pedra dos Sonhos",
    "nivelItem": 99,
-   "itemId": null,
+   "itemId": 15307,
    "raridade": "gold"
   },
   {
@@ -1075,8 +1075,8 @@ window.DROPS = {
    "boss": "Boss, Mobs, Baú",
    "qtdeBoss": "Média/Alta",
    "item": "Pedra do Lar",
-   "nivelItem": 80,
-   "itemId": null,
+   "nivelItem": 90,
+   "itemId": 15279,
    "raridade": "normal"
   },
   {
@@ -1100,6 +1100,916 @@ window.DROPS = {
    "nivelItem": 99,
    "itemId": 15308,
    "raridade": "normal"
+  }
+ ],
+ "bosses": [
+  {
+   "capitulo": 1,
+   "boss": "Qin Tian",
+   "modo": "Solo / Grupo",
+   "qtdeBoss": "Média/Alta",
+   "dusks": {
+    "1": [
+     {
+      "item": "Lâmina de Qin Tian",
+      "nivelItem": 60,
+      "itemId": 15227,
+      "raridade": "normal"
+     }
+    ],
+    "2": [
+     {
+      "item": "Fragmento da Armadura Qin Tian",
+      "nivelItem": 70,
+      "itemId": 15230,
+      "raridade": "normal"
+     }
+    ],
+    "3": [
+     {
+      "item": "Carapaça de Qin Tian",
+      "nivelItem": 80,
+      "itemId": 15239,
+      "raridade": "normal"
+     }
+    ]
+   }
+  },
+  {
+   "capitulo": 1,
+   "boss": "Deus Tambor",
+   "modo": "Solo / Grupo",
+   "qtdeBoss": "Média/Alta",
+   "dusks": {
+    "1": [
+     {
+      "item": "Tambor da Interferência",
+      "nivelItem": 60,
+      "itemId": 15228,
+      "raridade": "normal"
+     }
+    ],
+    "2": [
+     {
+      "item": "Porta Tambor",
+      "nivelItem": 70,
+      "itemId": 15231,
+      "raridade": "normal"
+     }
+    ],
+    "3": [
+     {
+      "item": "Grande Tambor Tenaz",
+      "nivelItem": 80,
+      "itemId": 15240,
+      "raridade": "normal"
+     }
+    ]
+   }
+  },
+  {
+   "capitulo": 1,
+   "boss": "Emissário",
+   "modo": "Grupo",
+   "qtdeBoss": "Alta",
+   "dusks": {
+    "1": [],
+    "2": [
+     {
+      "item": "Tentáculo Fantasma",
+      "nivelItem": 70,
+      "itemId": 15232,
+      "raridade": "normal"
+     }
+    ],
+    "3": [
+     {
+      "item": "Espelho Dourado Fantasma",
+      "nivelItem": 80,
+      "itemId": 15242,
+      "raridade": "normal"
+     }
+    ]
+   }
+  },
+  {
+   "capitulo": 1,
+   "boss": "Armadura Sagrada",
+   "modo": "Grupo",
+   "qtdeBoss": "Alta",
+   "dusks": {
+    "1": [],
+    "2": [
+     {
+      "item": "Fragmento da Armadura Dourada",
+      "nivelItem": 70,
+      "itemId": 15235,
+      "raridade": "normal"
+     }
+    ],
+    "3": [
+     {
+      "item": "Pedaço da Armadura Dourada",
+      "nivelItem": 80,
+      "itemId": 15245,
+      "raridade": "normal"
+     },
+     {
+      "item": "Espírito da Armadura Dourada",
+      "nivelItem": 80,
+      "itemId": 15253,
+      "raridade": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "capitulo": 1,
+   "boss": "Serpente Ancestral",
+   "modo": "Grupo",
+   "qtdeBoss": "Alta",
+   "dusks": {
+    "1": [],
+    "2": [
+     {
+      "item": "Pele da Serpente Ancestral",
+      "nivelItem": 70,
+      "itemId": 15234,
+      "raridade": "normal"
+     }
+    ],
+    "3": [
+     {
+      "item": "Sangue da Serpente Ancestral",
+      "nivelItem": 80,
+      "itemId": 15244,
+      "raridade": "normal"
+     },
+     {
+      "item": "Alma da Serpente Ancestral",
+      "nivelItem": 80,
+      "itemId": 15252,
+      "raridade": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "capitulo": 1,
+   "boss": "Boss, Baú",
+   "modo": "Solo / Grupo",
+   "qtdeBoss": "Média/Alta",
+   "dusks": {
+    "1": [
+     {
+      "item": "Fragmento de Esqueleto",
+      "nivelItem": 60,
+      "itemId": 15229,
+      "raridade": "normal"
+     }
+    ],
+    "2": [
+     {
+      "item": "Fragmento de Esqueleto",
+      "nivelItem": 60,
+      "itemId": 15229,
+      "raridade": "normal"
+     },
+     {
+      "item": "Caveira das Charadas",
+      "nivelItem": 70,
+      "itemId": 15238,
+      "raridade": "normal"
+     }
+    ],
+    "3": [
+     {
+      "item": "Caveira das Charadas",
+      "nivelItem": 70,
+      "itemId": 15238,
+      "raridade": "normal"
+     },
+     {
+      "item": "Antiga Espada Ornamental",
+      "nivelItem": 80,
+      "itemId": 15256,
+      "raridade": "normal"
+     }
+    ]
+   }
+  },
+  {
+   "capitulo": 2,
+   "boss": "Leão Insano Zhen Zhun",
+   "modo": "Solo / Grupo",
+   "qtdeBoss": "Média/Alta",
+   "dusks": {
+    "1": [
+     {
+      "item": "Carapaça do Leão Insano",
+      "nivelItem": 70,
+      "itemId": 15233,
+      "raridade": "normal"
+     }
+    ],
+    "2": [
+     {
+      "item": "Garras do Leão Insano",
+      "nivelItem": 80,
+      "itemId": 15241,
+      "raridade": "normal"
+     }
+    ],
+    "3": [
+     {
+      "item": "Lâmina Afiada do Leão Insano",
+      "nivelItem": 90,
+      "itemId": 15257,
+      "raridade": "normal"
+     }
+    ]
+   }
+  },
+  {
+   "capitulo": 2,
+   "boss": "Marechal Shen Wuluo (Multiplica)",
+   "modo": "Solo / Grupo",
+   "qtdeBoss": "Média/Alta",
+   "dusks": {
+    "1": [
+     {
+      "item": "Elmo do Tenente Primordial",
+      "nivelItem": 70,
+      "itemId": 15236,
+      "raridade": "normal"
+     },
+     {
+      "item": "Jóia Negra do Tenente Primordial",
+      "nivelItem": 70,
+      "itemId": 15237,
+      "raridade": "gold"
+     }
+    ],
+    "2": [
+     {
+      "item": "Espinho do Tenente Primordial",
+      "nivelItem": 80,
+      "itemId": 15243,
+      "raridade": "normal"
+     }
+    ],
+    "3": [
+     {
+      "item": "Protetor do Tenente Primordial",
+      "nivelItem": 90,
+      "itemId": 15259,
+      "raridade": "normal"
+     }
+    ]
+   }
+  },
+  {
+   "capitulo": 2,
+   "boss": "Marechal Feng Wuhen (Cavalo)",
+   "modo": "Solo / Grupo",
+   "qtdeBoss": "Média/Alta",
+   "dusks": {
+    "1": [
+     {
+      "item": "Armadura Negra de Feng Wuhen",
+      "nivelItem": 80,
+      "itemId": 15246,
+      "raridade": "normal"
+     },
+     {
+      "item": "Luvas de Feng Wuhen",
+      "nivelItem": 80,
+      "itemId": 15254,
+      "raridade": "gold"
+     }
+    ],
+    "2": [
+     {
+      "item": "Estandarte de Feng Wuhen",
+      "nivelItem": 80,
+      "itemId": 15249,
+      "raridade": "normal"
+     },
+     {
+      "item": "Luvas de Feng Wuhen",
+      "nivelItem": 80,
+      "itemId": 15254,
+      "raridade": "gold"
+     }
+    ],
+    "3": [
+     {
+      "item": "Chifre de Sela de Shenwu",
+      "nivelItem": 90,
+      "itemId": 15261,
+      "raridade": "normal"
+     }
+    ]
+   }
+  },
+  {
+   "capitulo": 2,
+   "boss": "Grande Símeo",
+   "modo": "Grupo",
+   "qtdeBoss": "Alta",
+   "dusks": {
+    "1": [
+     {
+      "item": "Presa do Grande Símeo",
+      "nivelItem": 80,
+      "itemId": 15247,
+      "raridade": "normal"
+     },
+     {
+      "item": "Mão do Grande Símeo",
+      "nivelItem": 80,
+      "itemId": 15255,
+      "raridade": "gold"
+     }
+    ],
+    "2": [
+     {
+      "item": "Couraça do Grande Símeo",
+      "nivelItem": 80,
+      "itemId": 15250,
+      "raridade": "normal"
+     },
+     {
+      "item": "Mão do Grande Símeo",
+      "nivelItem": 80,
+      "itemId": 15255,
+      "raridade": "gold"
+     }
+    ],
+    "3": [
+     {
+      "item": "Cauda do Grande Símeo",
+      "nivelItem": 90,
+      "itemId": 15264,
+      "raridade": "normal"
+     }
+    ]
+   }
+  },
+  {
+   "capitulo": 2,
+   "boss": "Devorador Insano",
+   "modo": "Grupo",
+   "qtdeBoss": "Alta",
+   "dusks": {
+    "1": [
+     {
+      "item": "Garra do Devorador",
+      "nivelItem": 80,
+      "itemId": 15248,
+      "raridade": "normal"
+     }
+    ],
+    "2": [
+     {
+      "item": "Pele do Devorador",
+      "nivelItem": 80,
+      "itemId": 15251,
+      "raridade": "normal"
+     }
+    ],
+    "3": [
+     {
+      "item": "Barba de Ferro do Devorador",
+      "nivelItem": 90,
+      "itemId": 15267,
+      "raridade": "normal"
+     }
+    ]
+   }
+  },
+  {
+   "capitulo": 2,
+   "boss": "Emissário das Sete Almas",
+   "modo": "Grupo",
+   "qtdeBoss": "Alta",
+   "dusks": {
+    "1": [],
+    "2": [
+     {
+      "item": "Pó Estelar",
+      "nivelItem": 90,
+      "itemId": 15265,
+      "raridade": "normal"
+     },
+     {
+      "item": "Presa Prismática",
+      "nivelItem": 90,
+      "itemId": 15275,
+      "raridade": "gold"
+     }
+    ],
+    "3": [
+     {
+      "item": "Roda Prismática",
+      "nivelItem": 90,
+      "itemId": 15269,
+      "raridade": "normal"
+     },
+     {
+      "item": "Farelo Estelar",
+      "nivelItem": 90,
+      "itemId": 15270,
+      "raridade": "normal"
+     },
+     {
+      "item": "Poder do Espírito de Cristal",
+      "nivelItem": 90,
+      "itemId": 15277,
+      "raridade": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "capitulo": 2,
+   "boss": "Aniquilador Ancestral",
+   "modo": "Grupo",
+   "qtdeBoss": "Alta",
+   "dusks": {
+    "1": [],
+    "2": [],
+    "3": [
+     {
+      "item": "Chifre do Demônio Ancestral",
+      "nivelItem": 90,
+      "itemId": 15271,
+      "raridade": "normal"
+     },
+     {
+      "item": "Cinzas do Demônio Ancestral",
+      "nivelItem": 90,
+      "itemId": 15272,
+      "raridade": "normal"
+     },
+     {
+      "item": "Alma do Demônio Ancestral",
+      "nivelItem": 90,
+      "itemId": 15278,
+      "raridade": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "capitulo": 2,
+   "boss": "Boss, Baú",
+   "modo": "Solo / Grupo",
+   "qtdeBoss": "Média/Alta",
+   "dusks": {
+    "1": [
+     {
+      "item": "Caveira das Charadas",
+      "nivelItem": 70,
+      "itemId": 15238,
+      "raridade": "normal"
+     },
+     {
+      "item": "Antiga Espada Ornamental",
+      "nivelItem": 80,
+      "itemId": 15256,
+      "raridade": "normal"
+     }
+    ],
+    "2": [
+     {
+      "item": "Antiga Espada Ornamental",
+      "nivelItem": 80,
+      "itemId": 15256,
+      "raridade": "normal"
+     },
+     {
+      "item": "Pedra do Lar",
+      "nivelItem": 90,
+      "itemId": 15279,
+      "raridade": "normal"
+     }
+    ],
+    "3": [
+     {
+      "item": "Pedra do Lar",
+      "nivelItem": 90,
+      "itemId": 15279,
+      "raridade": "normal"
+     }
+    ]
+   }
+  },
+  {
+   "capitulo": 3,
+   "boss": "Qiu Jian",
+   "modo": "Solo / Grupo",
+   "qtdeBoss": "Média/Alta",
+   "dusks": {
+    "1": [
+     {
+      "item": "Armadura de Ferro da Escuridão",
+      "nivelItem": 90,
+      "itemId": 15258,
+      "raridade": "normal"
+     }
+    ],
+    "2": [
+     {
+      "item": "Armadura da Escuridão",
+      "nivelItem": 99,
+      "itemId": 15280,
+      "raridade": "normal"
+     }
+    ],
+    "3": [
+     {
+      "item": "Ferramentas da Escuridão",
+      "nivelItem": 99,
+      "itemId": 15282,
+      "raridade": "normal"
+     }
+    ]
+   }
+  },
+  {
+   "capitulo": 3,
+   "boss": "Escravo Demônio",
+   "modo": "Solo / Grupo",
+   "qtdeBoss": "Média/Alta",
+   "dusks": {
+    "1": [
+     {
+      "item": "Chifre Longo do Escravo Demônio",
+      "nivelItem": 90,
+      "itemId": 15260,
+      "raridade": "normal"
+     },
+     {
+      "item": "Carapaça do Escravo Fantasma",
+      "nivelItem": 90,
+      "itemId": 15273,
+      "raridade": "gold"
+     }
+    ],
+    "2": [
+     {
+      "item": "Lâmina-Machado do Fantasma",
+      "nivelItem": 99,
+      "itemId": 15281,
+      "raridade": "normal"
+     }
+    ],
+    "3": [
+     {
+      "item": "Coração de Fogo do Fantasma",
+      "nivelItem": 99,
+      "itemId": 15284,
+      "raridade": "normal"
+     }
+    ]
+   }
+  },
+  {
+   "capitulo": 3,
+   "boss": "Mulher Demônio",
+   "modo": "Solo / Grupo",
+   "qtdeBoss": "Média/Alta",
+   "dusks": {
+    "1": [
+     {
+      "item": "Mão da Mulher Demônio",
+      "nivelItem": 90,
+      "itemId": 15262,
+      "raridade": "normal"
+     }
+    ],
+    "2": [
+     {
+      "item": "Energia da Mulher Demônio",
+      "nivelItem": 99,
+      "itemId": 15286,
+      "raridade": "normal"
+     },
+     {
+      "item": "Alma da Mulher Demônio",
+      "nivelItem": 99,
+      "itemId": 15299,
+      "raridade": "gold"
+     }
+    ],
+    "3": [
+     {
+      "item": "Coroa da Mulher Demônio",
+      "nivelItem": 99,
+      "itemId": 15283,
+      "raridade": "normal"
+     }
+    ]
+   }
+  },
+  {
+   "capitulo": 3,
+   "boss": "Sagrada Mãe das Almas",
+   "modo": "Grupo",
+   "qtdeBoss": "Alta",
+   "dusks": {
+    "1": [
+     {
+      "item": "Jóia da Sagrada Mãe",
+      "nivelItem": 90,
+      "itemId": 15263,
+      "raridade": "normal"
+     },
+     {
+      "item": "Diadema da Sagrada Mãe",
+      "nivelItem": 90,
+      "itemId": 15274,
+      "raridade": "gold"
+     }
+    ],
+    "2": [
+     {
+      "item": "Pedra Espiritual da Sagrada Mãe",
+      "nivelItem": 99,
+      "itemId": 15285,
+      "raridade": "normal"
+     }
+    ],
+    "3": [
+     {
+      "item": "Coração da Sagrada Mãe",
+      "nivelItem": 99,
+      "itemId": 15288,
+      "raridade": "normal"
+     }
+    ]
+   }
+  },
+  {
+   "capitulo": 3,
+   "boss": "Grande Besta das Trevas",
+   "modo": "Grupo",
+   "qtdeBoss": "Alta",
+   "dusks": {
+    "1": [
+     {
+      "item": "Carapaça da Grande Besta",
+      "nivelItem": 90,
+      "itemId": 15268,
+      "raridade": "normal"
+     },
+     {
+      "item": "Casco da Grande Besta",
+      "nivelItem": 90,
+      "itemId": 15276,
+      "raridade": "gold"
+     }
+    ],
+    "2": [
+     {
+      "item": "Hálito Negro da Grande Besta",
+      "nivelItem": 99,
+      "itemId": 15289,
+      "raridade": "normal"
+     }
+    ],
+    "3": [
+     {
+      "item": "Chifre Rubro da Grande Besta",
+      "nivelItem": 99,
+      "itemId": 15291,
+      "raridade": "normal"
+     },
+     {
+      "item": "Alma da Grande Besta",
+      "nivelItem": 99,
+      "itemId": 15301,
+      "raridade": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "capitulo": 3,
+   "boss": "Tie Luoyun (Rei Fantasma)",
+   "modo": "Grupo",
+   "qtdeBoss": "Alta",
+   "dusks": {
+    "1": [
+     {
+      "item": "Pingente do Rei Fantasma",
+      "nivelItem": 90,
+      "itemId": 15266,
+      "raridade": "normal"
+     }
+    ],
+    "2": [
+     {
+      "item": "Poder do Rei Fantasma",
+      "nivelItem": 99,
+      "itemId": 15287,
+      "raridade": "normal"
+     }
+    ],
+    "3": [
+     {
+      "item": "Seda Dourada do Rei Fantasma",
+      "nivelItem": 99,
+      "itemId": 15290,
+      "raridade": "normal"
+     },
+     {
+      "item": "Bainha do Rei Fantasma",
+      "nivelItem": 99,
+      "itemId": 15300,
+      "raridade": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "capitulo": 3,
+   "boss": "Ministro Zi Cun",
+   "modo": "Grupo",
+   "qtdeBoss": "Alta",
+   "dusks": {
+    "1": [],
+    "2": [
+     {
+      "item": "Casco da Grande Besta",
+      "nivelItem": 99,
+      "itemId": 15294,
+      "raridade": "normal"
+     },
+     {
+      "item": "Selo do Ministro",
+      "nivelItem": 99,
+      "itemId": 15295,
+      "raridade": "normal"
+     },
+     {
+      "item": "Alma Pura da Escuridão",
+      "nivelItem": 99,
+      "itemId": 15303,
+      "raridade": "gold"
+     }
+    ],
+    "3": [
+     {
+      "item": "Chicote de Seda Pura",
+      "nivelItem": 99,
+      "itemId": 15297,
+      "raridade": "normal"
+     },
+     {
+      "item": "Asas Puras Brilhantes",
+      "nivelItem": 99,
+      "itemId": 15305,
+      "raridade": "gold"
+     },
+     {
+      "item": "Cetro do Poder do Crepúsculo",
+      "nivelItem": 100,
+      "itemId": 15310,
+      "raridade": "red"
+     }
+    ]
+   }
+  },
+  {
+   "capitulo": 3,
+   "boss": "Rei Cang Li (Imperador do Crepúsculo)",
+   "modo": "Grupo",
+   "qtdeBoss": "Alta",
+   "dusks": {
+    "1": [],
+    "2": [
+     {
+      "item": "Lâmina Verdejante",
+      "nivelItem": 99,
+      "itemId": 15293,
+      "raridade": "normal"
+     },
+     {
+      "item": "Jóia Verdejante",
+      "nivelItem": 99,
+      "itemId": 15292,
+      "raridade": "normal"
+     },
+     {
+      "item": "Destino do Crepúsculo",
+      "nivelItem": 99,
+      "itemId": 15302,
+      "raridade": "gold"
+     }
+    ],
+    "3": [
+     {
+      "item": "Espírito Guerreiro do Rei",
+      "nivelItem": 99,
+      "itemId": 15296,
+      "raridade": "normal"
+     },
+     {
+      "item": "Remorso do Crepúsculo",
+      "nivelItem": 99,
+      "itemId": 15304,
+      "raridade": "gold"
+     },
+     {
+      "item": "Máscara Dourada",
+      "nivelItem": 100,
+      "itemId": 15309,
+      "raridade": "red"
+     }
+    ]
+   }
+  },
+  {
+   "capitulo": 3,
+   "boss": "Senhor das Ilusões",
+   "modo": "Grupo",
+   "qtdeBoss": "Alta",
+   "dusks": {
+    "1": [],
+    "2": [],
+    "3": [
+     {
+      "item": "Fonte Espelhada Ilusória",
+      "nivelItem": 99,
+      "itemId": 15298,
+      "raridade": "normal"
+     },
+     {
+      "item": "Marca do Senhor das Ilusões",
+      "nivelItem": 99,
+      "itemId": 15306,
+      "raridade": "gold"
+     },
+     {
+      "item": "Pedra dos Sonhos",
+      "nivelItem": 99,
+      "itemId": 15307,
+      "raridade": "gold"
+     },
+     {
+      "item": "Espírito do Céu e da Terra",
+      "nivelItem": 100,
+      "itemId": 15311,
+      "raridade": "red"
+     }
+    ]
+   }
+  },
+  {
+   "capitulo": 3,
+   "boss": "Boss, Mobs, Baú",
+   "modo": "Solo / Grupo",
+   "qtdeBoss": "Média/Alta",
+   "dusks": {
+    "1": [
+     {
+      "item": "Antiga Espada Ornamental",
+      "nivelItem": 80,
+      "itemId": 15256,
+      "raridade": "normal"
+     },
+     {
+      "item": "Pedra do Lar",
+      "nivelItem": 90,
+      "itemId": 15279,
+      "raridade": "normal"
+     }
+    ],
+    "2": [
+     {
+      "item": "Pedra do Lar",
+      "nivelItem": 90,
+      "itemId": 15279,
+      "raridade": "normal"
+     },
+     {
+      "item": "Símbolo do Crepúsculo",
+      "nivelItem": 99,
+      "itemId": 15308,
+      "raridade": "normal"
+     }
+    ],
+    "3": [
+     {
+      "item": "Símbolo do Crepúsculo",
+      "nivelItem": 99,
+      "itemId": 15308,
+      "raridade": "normal"
+     }
+    ]
+   }
   }
  ]
 };
